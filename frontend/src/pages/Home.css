@@ -1,0 +1,112 @@
+
+h1{
+    font-size: 2.5rem;
+    font-family: "Rubik Dirt", system-ui;
+
+}
+
+.seccion-oscura{
+    color: rgb(0, 0, 0);
+    background-color: rgb(188, 232, 244);
+}
+
+.seccion-clara{
+    color: black;
+    background-color: azure;
+}
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: grey;
+}
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+.btn-info{
+    font-size: 1.1rem;
+    margin: 20px;
+}
+
+.texto-negro{
+    color: black;
+}
+
+.texto-blanco{
+    color: aliceblue;
+}
+
+/* introduction */
+.introduction{
+    height: 250px;
+    padding: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.introduction .capsule{
+    max-width: 1000px;
+    text-align: center; 
+}
+
+/* problems */
+.problems-test{
+    padding: 2px;
+}
+
+.problems-test img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.problems-capsule{
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.problem{
+    position: relative;
+}
+
+.problem:hover img{
+    opacity: 0.2;
+}
+.problem:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .description-capsule p {
+    width: 100%; 
+}
+
+@media screen and (max-width:990px){
+    .overlay p{
+        font-size: 15px;
+    }
+}
